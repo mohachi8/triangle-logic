@@ -1,0 +1,14 @@
+# pnpm
+.pnpm-debug.log
+node_modules
+
+# ビルド出力
+dist
+build
+
+# TypeScript
+*.tsbuildinfo
+
+# 環境設定
+.env
+.env.local
