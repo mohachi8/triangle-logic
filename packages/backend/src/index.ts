@@ -1,10 +1,12 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
-app.get("/", (req, res) => {
-  res.send("Hello from Backend!");
+app.use(cors());
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Hello from backend!" });
 });
 
 app.listen(port, () => {
